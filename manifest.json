@@ -1,0 +1,35 @@
+{ 
+    "manifest_version": 2, 
+    "name": "米刷", 
+    "version": "1.0", 
+    "description": "你懂的", 
+    "browser_action": { 
+        "default_icon": "img/icon.png",
+        "default_popup": "popup.html"  
+    }, 
+    "icons": {
+        "16": "img/icon.png",             
+        "48": "img/icon48.png",            
+        "128": "img/icon128.png"
+    },
+    "permissions": [ 
+        "http://*/", 
+        "https://*/", 
+        "bookmarks",
+        "tabs", 
+        "cookies"//,
+        //"background",
+        //"history","proxy",  "webRequest", "webRequestBlocking" 
+    ] //, 
+    // "background": { // 后端一直运行的js，全局的，生命周期从浏览器打开到浏览器关闭  
+    //     "scripts": ["jquery.min.js","background.js"]  
+    // }, 
+    // "content_scripts": [ 
+    //     { 
+    //         "matches": ["http://*/*","https://*/*"], 
+    //         //"css": ["mystyles.css"], 
+    //         "js": ["jquery.min.js","main.js"] 
+    //     } 
+    // ]
+
+}
